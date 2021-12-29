@@ -1,0 +1,5 @@
+arch: ppc64le 
+dist: focal 
+
+script:
+  - docker run -t ubuntu:latest bash -c "apt update -y && apt install git -y && git clone https://github.com/ppc64le/build-scripts.git"
